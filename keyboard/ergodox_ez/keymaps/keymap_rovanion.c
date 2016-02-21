@@ -19,7 +19,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * |--------+------+------+------+------+------|SftIns|           | Meh  |------+------+------+------+------+--------|
  * | LShift |Z/Ctrl|   X  |   C  |   V  |   B  |      |           |      |   N  |   M  |   ,  |   .  |//Ctrl|   \    |
  * `--------+------+------+------+------+-------------'           `-------------+------+------+------+------+--------'
- *   |Grv/L1|  '"  |AltShf| Left | Right|                                       |  Up  | Down |   [  |   ]  | ~L1  |
+ *   |Grv/L1|  '"  |AltShf| Left | Right|                                       | AltGr|   ]  |  Up  | Down | ~L1  |
  *   `----------------------------------'                                       `----------------------------------'
  *                                    ,-----------------.       ,---------------.
  *                                    | App      | Home |       | Alt  |Ctrl/Esc|
@@ -47,7 +47,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 	TG(3),        KC_Y,   KC_U,   KC_I,   KC_O,   KC_P,             KC_LBRC,
 	              KC_H,   KC_J,   KC_K,   KC_L,   KC_SCLN,          KC_QUOT,
 	MEH_T(KC_NO), KC_N,   KC_M,   KC_COMM,KC_DOT, CTL_T(KC_SLSH),   KC_BSLS,
-	KC_RALT,      KC_UP,  KC_DOWN,KC_RBRC,          KC_FN1,
+	KC_RALT,      KC_RBRC,KC_UP,  KC_DOWN,          KC_FN1,
 	KC_LALT,      CTL_T(KC_ESC),
 	KC_PGUP,   
 	KC_PGDN,      LT(SYMB,KC_TAB), MT(MOD_LSFT,KC_BSPC)
@@ -155,19 +155,19 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  *                                 ,------|------|------|       |------+------+------.
  *                                 |      |      |      |       |      |      |      |
  *                                 |Space | LAlt |------|       |------|      |      |
- *                                 |      |      | Ctrl |       |      |      |      |
+ *                                 |      |      | Enter|       |      |      |      |
  *                                 `--------------------'       `--------------------'
  */
 // Gaming layout
-[GAME] = KEYMAP(
+KEYMAP(
        KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
        KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
        KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
-       KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
-       KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
+       KC_TRNS, KC_LCTL,    KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
+       KC_LCTL, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
                                            KC_TRNS, KC_TRNS,
                                                     KC_TRNS,
-                                  KC_SPC,  KC_LALT, KC_LCTL,
+                                  KC_SPC,  KC_LALT, KC_ENT,
     // right hand
        KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, RESET,
        KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,
