@@ -1,4 +1,4 @@
-#include "ergodox_ez.h"
+#include "ergodox.h"
 #include "debug.h"
 #include "action_layer.h"
 #include "../../../../quantum/keymap_extras/keymap_nordic.h"
@@ -20,7 +20,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * |--------+------+------+------+------+------|Shift+|           | Meh  |------+------+------+------+------+--------|
  * | LShift |   Z  |   X  |   C  |   V  |   B  |Insert|           |      |   N  |   M  |   ,  |   .  |//Ctrl|   Å    |
  * `--------+------+------+------+------+-------------'           `-------------+------+------+------+------+--------'
- *   |LCtrl |  '"  |AltShf| Left | Right|                                       | AltGr|   ]  |  Up  | Down | ~L1  |
+ *   |LCtrl |  '"  | Left | Right| LAlt |                                       | AltGr|   ]  |  Up  | Down | ~L1  |
  *   `----------------------------------'                                       `----------------------------------'
  *                                    ,-----------------.       ,---------------.
  *                                    | App      | Home |       | Media|Ctrl/Esc|
@@ -38,7 +38,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         KC_TAB,    KC_Q,       KC_W,          KC_E,     KC_R,   KC_T,   MO(1),
         KC_LGUI,   KC_A,       KC_S,          KC_D,     KC_F,   KC_G,
         KC_LSFT,   KC_Z,       KC_X,          KC_C,     KC_V,   KC_B,   S(KC_INS),
-        KC_LCTL,   KC_QUOT,    LALT(KC_LSFT), KC_LEFT,  KC_RGHT,
+        KC_LCTL,   KC_QUOT,    KC_LEFT,       KC_RGHT,  KC_LALT,
                                               ALT_T(KC_APP), KC_HOME,
                                                               KC_END,
                     MT(MOD_LCTL,KC_SPC),MT(MOD_LALT,KC_ENT),  KC_GRV,
