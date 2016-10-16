@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #----------------------------------------------------------------------------
 # On command line:
 #
@@ -85,3 +86,8 @@ UNICODE_ENABLE   ?= yes # Unicode
 ifndef QUANTUM_DIR
 	include ../../Makefile
 endif
+=======
+ifndef MAKEFILE_INCLUDED
+	include ../../../Makefile
+endif
+>>>>>>> 0a9ad8f335f5b5b9d184d9e5e9ece6cda149df7e

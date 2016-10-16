@@ -1,20 +1,6 @@
-#----------------------------------------------------------------------------
-# On command line:
-#
-# make = Make software.
-#
-# make clean = Clean out built project files.
-#
-# That's pretty much all you need. To compile, always go make clean, 
-# followed by make.
-#
-# For advanced users only:
-# make teensy = Download the hex file to the device, using teensy_loader_cli.
-#               (must have teensy_loader_cli installed).
-#
-#----------------------------------------------------------------------------
 SUBPROJECT_DEFAULT = ez
 
+<<<<<<< HEAD
 # Build Options
 #   comment out to disable the options.
 #
@@ -30,5 +16,8 @@ MIDI_ENABLE      ?= no  # MIDI controls
 UNICODE_ENABLE   ?= yes # Unicode
 
 ifndef QUANTUM_DIR
+=======
+ifndef MAKEFILE_INCLUDED
+>>>>>>> 0a9ad8f335f5b5b9d184d9e5e9ece6cda149df7e
 	include ../../Makefile
 endif
